@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;700&family=Oswald:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+ul,li{
+    list-style-type: none;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+/* ==================== header part css start ================== */
+#header{
+    background: #0872b9;
+    padding: 10px 0;
+}
+
+.header-main{
+    display: flex;
+}
+.header-text{
+    width: 30%;
+}
+.header-text h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #e7e7e7;
+
+}
+.header-icon{
+    width: 70%;
+    text-align: right;
+}
+.header-icon i{
+    color: #e7e7e7;
+    padding-left: 30px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.header-icon i:hover{
+    color: #353535;
+}
+
+/* =================== navbar part start ======================= */
+
+#navbar{
+    background: #fff;
+}
+.nav-main{
+    display: flex;
+}
+.nav-logo{
+    width: 30%;
+}
+.nav-logo img{
+    padding-top: 20px;
+}
+.nav-menu{
+    width: 70%;
+    text-align: right;
+    line-height: 80px;
+}
+.nav-menu ul li{
+    display: inline-block;
+}
+.nav-menu ul li a{
+    padding-left: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #353535;
+    transition: 0.4s;
+}
+.nav-menu ul li a:hover{
+    color: #0872b9;
+}
+/* ============= banner part start ==================== */
+#banner{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 95px;
+    position: relative;
+    z-index: 1;
+    
+}
+#banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+.banner-text{
+    text-align: right;
+}
+.banner-text h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.banner-text h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.banner-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    line-height: 24px;
+    padding-left: 500px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.banner-text a{
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    margin: 0 5px;
+    transition: 0.4s
+}
+.banner-text a:hover{
+    background: #0872b9;
+    border: 1px solid #0872b9;
+}
+/* ==================== about part start =============== */
+#about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.common-head h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #353535;
+    text-transform: uppercase;
+}
+
+.common-head{
+    position: relative;
+    display: inline-block;
+}
+.common-head img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.about-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+.about-left{
+    width: 380px;
+}
+.about-left img{
+    width: 100%;
+}
+.about-right{
+    width: 540px;
+    text-align: left;
+}
+
+.about-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #555555;
+    line-height: 24px;
+}
+.about-text p{
+    padding: 20px 0;
+}
+
+/* ============================= service part css start ============================= */
+#service{
+    padding-bottom: 60px;
+    text-align: center;
+}
+.service-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.service-item {
+	width: 300px;
+	background: #f1f1f1;
+	position: relative;
+    transition: 0.4s;
+}
+.service-item:hover{
+    box-shadow: 5px 5px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.service-item:hover .service-icon{
+    background: #5bc5f4;
+}
+
+.service-item h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: #353535;
+    text-transform: uppercase;
+    padding-top: 50px; 
+}   
+.service-item p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #555555;
+    line-height: 24px;
+    padding: 20px;
+}
+.service-icon{
+    width: 68px;
+    height: 68px;
+    background: #f1f1f1;
+    position: absolute;
+    top: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    line-height: 68px;
+    text-align: center;
+    border: 5px solid #fff;
+    transition: 0.4s;
+}
+.service-icon::after{
+    position: absolute;
+    content: '';
+    width: 62px;
+    height: 62px;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+    top: -3px;
+    left: -3px;
+}
+
+
+/* ================= portfolio part start ============= */
+#portfolio{
+    padding-bottom: 60px;
+    text-align: center;
+}
+.port-main{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.port-item{
+    width: 220px;
+}
+.port-img img{
+    width: 100%;
+}
+.port-img{
+    position: relative;
+    margin-bottom: 20px;
+}
+.port-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.4s;
+}
+.port-img:hover .port-overlay{
+    opacity: 1;
+}
+.port-icon i{
+    width: 40px;
+    height: 40px;
+    background: #5bc5f4;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+/* ======================= team part start ======================== */
+#team{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.team-main{
+    display: flex;
+    justify-content: space-between;
+}
+.team-item{
+    width: 220px;
+    padding-top: 30px;
+}
+.team-text h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #353535;
+    text-transform: uppercase;
+    padding-top: 5px;
+    transition: 0.4s;
+}
+
+.team-text p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555555;
+}
+
+.team-item:hover .team-text h2{
+    color: #5bc5f4;
+}
+.team-img{
+    position: relative;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.4s;
+}
+.team-item:hover .team-overlay{
+    opacity: 1;
+    width: 80px;
+}
+
+.team-icon i{
+    display: block;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 7px 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.team-icon i:hover{
+    background: #5bc5f4;
+    border: 1px solid #5bc5f4;
+}
+
+/* ===================== testimonial part css start ==================== */
+#testimonial{
+    text-align: center;
+    padding-bottom: 60px;
+}
+.testimonial-main{
+    display: flex;
+    justify-content: space-between;
+}
+.testimonial-item{
+    width: 460px;
+    padding-top: 30px;
+}
+.testimonial-text{
+    background: #f1f1f1;
+    margin-top: 35px;
+    position: relative;
+}
+.box {
+	width: 30px;
+	height: 30px;
+	background: #f1f1f1;
+	position: absolute;
+	top: -4px;
+	left: 50%;
+	transform: translateX(-50%);
+	rotate: 45deg;
+}
+.testimonial-text h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #353535;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+.testimonial-text i{
+    color: #5bc5f4;
+    padding-top: 5px;
+}
+
+.testimonial-text p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #555555;
+    padding: 20px 20px;
+    line-height: 24px;
+}
+
+/* ====================== footer part css start ====================== */
+#footer{
+    background: #353535;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left{
+    width: 460px;
+}
+.left-main{
+    display: flex;
+    justify-content: space-between;
+}
+.left-item-1{
+    width: 220px;
+}
+.left-item-1 p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #f1f1f1;
+    line-height: 24px;
+    padding-top: 30px;
+}
+.left-item-2{
+    width: 220px;
+}
+.head h3{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 35px;
+}
+.left-item-2 ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #f1f1f1;
+    padding-top: 15px;
+}
+
+
+
+
+.footer-right{
+    width: 460px;
+}
